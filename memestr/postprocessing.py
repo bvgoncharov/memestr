@@ -9,7 +9,8 @@ from bilby.core.prior import Interped
 import bilby.gw.utils as utils
 
 from memestr.waveforms.phenom import *
-from . import gwmemory
+#from . import gwmemory
+import gwmemory
 
 ReweightingTerms = namedtuple(
     'ReweightingTerms', ['memory_amplitude_sample', 'd_inner_h_mem', 'optimal_snr_squared_h_mem', 'h_osc_inner_h_mem'])

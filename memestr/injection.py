@@ -3,20 +3,20 @@ import warnings
 import pandas as pd
 from bilby.core.utils import logger
 
-from memestr.population import generate_all_parameters
+#from memestr.population import generate_all_parameters
 from memestr.waveforms import *
 
 warnings.filterwarnings("ignore")
-mass_kwargs = dict(alpha=1.5, beta=3, mmin=8, mmax=45)
-logger.info('Generating population parameters')
-# all_params = generate_all_parameters(size=10000, clean=False, plot=False, **mass_kwargs)
-all_params = dict()
-logger.info('Generated population parameters')
+#mass_kwargs = dict(alpha=1.5, beta=3, mmin=8, mmax=45)
+#logger.info('Generating population parameters')
+## all_params = generate_all_parameters(size=10000, clean=False, plot=False, **mass_kwargs)
+#all_params = dict()
+#logger.info('Generated population parameters')
+#
+#network_snrs = []
 
-network_snrs = []
 
-
-def create_injection():
+def create_injection(all_params):
     best_snr = 0
     network_snr = 0
     params = dict()
